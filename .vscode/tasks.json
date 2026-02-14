@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "CP: Compile & Run",
+            "type": "shell",
+            "windows": {
+                "command": "cmd",
+                "args": [
+                    "/C",
+                    "g++ \"${file}\" -o \"${fileDirname}\\${fileBasenameNoExtension}.exe\" && \"${fileDirname}\\${fileBasenameNoExtension}.exe\" < \"${fileDirname}\\input.txt\" > \"${fileDirname}\\output.txt\""
+                ]
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "silent",
+                "panel": "shared"
+            },
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}
