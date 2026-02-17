@@ -16,7 +16,10 @@ int main() {
   string str = "Manish Chauhan";
   string str_rev;
   for(int i = str.size() - 1; i >= 0; --i){
-    str_rev += str[i];
+    
+    //high time complexity and char is added to string
+    // str_rev += str[i];
+    str_rev.push_back(str[i]);
   }
   cout << str_rev;
 }
