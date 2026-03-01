@@ -4,11 +4,11 @@ using namespace std;
 int main() {
   int t;
   cin >> t;
-  int n;
+  long n;
 
-  for(int i = 1; i < t; ++i) {
+  for(int i = 0; i < t; ++i) {
     cin >> n;
 
-    
+    cout << n * 4 << endl;
   }
 }
