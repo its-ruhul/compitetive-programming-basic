@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+
+  int n;
+  cin >> n;
+
+  for(int i = 0; i < n; ++i){
+    int t;
+    cin >> t;
+
+    int count = 0;
+
+    for(int j = 0; j < t; ++j){
+      int a;
+      cin >> a;
+
+      if (t + 2 - j == a){
+        count++;
+      }
+    }
+    cout << count << endl;
+  }
+}
